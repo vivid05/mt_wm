@@ -336,7 +336,7 @@ export default {
     name:'Index',
     components:{start},
     data(){
-      return {flag:true,isActive:true,active: 0}
+      return {flag:true,isActive:true,active: 0,Y:0}
     },
     props:{
       currentCity:String
@@ -344,11 +344,11 @@ export default {
     methods:{
       initScroll(){
         window.addEventListener('scroll',()=>{
-          let Y=document.documentElement.scrollTop
-          if(Y>196){
+          this.Y=document.documentElement.scrollTop
+          if(this.Y>196){
             this.flag=false
             this.isActive=false
-          }else if(Y>0&&Y<196){
+          }else if(this.Y>0&&this.Y<196){
             this.flag=true
             this.isActive=true
           }

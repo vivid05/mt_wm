@@ -1,6 +1,6 @@
 <template>
   <div id="App">
-      <router-view :currentCity='currentCity' @changeCity="change"></router-view>
+      <router-view :currentCity='currentCity' @changeCity="change"></router-view> 
   </div>
 </template>
 

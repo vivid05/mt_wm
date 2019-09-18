@@ -14,24 +14,6 @@
 <script>
 import Header from './components/header/Header'
 import Nav from '@/components/nav/Nav'
-import Goods from '@/components/goods/Goods';
-import Ratings from '@/components/ratings/Ratings';
-import Seller from '@/components/seller/Seller';
-import VueRouter from 'vue-router';
-import Vue from 'vue'
-Vue.use(VueRouter)
-const routes = [
-  {path:'/',redirect:'/goods'},
-  {path:"/goods",component:Goods},
-  {path:"/ratings",component:Ratings},
-  {path:"/seller",component:Seller}
-]
-
-// 实例化router
-const router = new VueRouter({
-  routes,
-  linkActiveClass:"active"
-})
 export default {
   name: 'Home',
   router,
